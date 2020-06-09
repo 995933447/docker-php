@@ -100,6 +100,4 @@ RUN docker-php-ext-configure opcache --enable-opcache && docker-php-ext-install 
 
 RUN docker-php-source delete
 
-ENTRYPOINT ["php"]
-
-CMD ["-m"]
+CMD php -v && php -m
